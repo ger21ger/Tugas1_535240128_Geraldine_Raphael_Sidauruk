@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* properti display: none */
+        h1.hide {
+            display: none; /* elemen tidak tampil DAN tidak memakan ruang */
+        }
+
+        li {
+            display: inline; /* elemen <li> ditampilkan sejajar (horizontal) */
+        }
+
+        /* Ubah elemen <span> (inline) menjadi block */
+        span {
+            display: block; /* elemen tampil di baris baru seperti <div>/<p> */
+        }
+
+        /* properti visibility: hidden */
+        h1.hidden {
+            visibility: hidden; /* elemen tidak terlihat TAPI tetap memakan ruang */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contoh penggunaan display: none -->
+    <h1>Ini Adalah Heading yang terlihat</h1>
+    <h1 class="hide">Ini adalah Heading yang tidak terlihat</h1>
+    <p>Perhatikan bahwa elemen h1 dengan <code>display: none;</code> tidak memakan tempat.</p>
+
+    <hr>
+
+    <!-- Override nilai default display -->
+    <p>Display a list of links as a horizontal menu:</p>
+    <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Option</a></li>
+    </ul>
+    <!-- Karena <li> dibuat inline, menu tampil horizontal -->
+
+    <hr>
+
+    <!-- Mengubah inline menjadi block -->
+    <span>Properti Display dengan nilai "block" menghasilkan</span>
+    <span>Pemisah baris (baris baru) antara dua elemen.</span>
+
+    <hr>
+
+    <!-- Contoh penggunaan visibility: hidden -->
+    <h1>Ini adalah Heading yang Terlihat</h1>
+    <h1 class="hidden">Ini adalah Heading yang disembunyikan</h1>
+    <p>Perhatikan bahwa judul tersembunyi masih membutuhkan tempat (ruang kosong tetap ada).</p>
+</body>
+
+</html>
